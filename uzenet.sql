@@ -1,0 +1,12 @@
+CREATE DATABASE uzenet DEFAULT CHARACTER SET utf8 COLLATE utf8_hungarian_ci;
+USE uzenet;
+
+CREATE TABLE uzenetek (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nev VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    uzenet TEXT NOT NULL,
+    datum DATETIME DEFAULT CURRENT_TIMESTAMP,
+    felhasznalo_id INT NULL
+);
+ALTER TABLE uzenetek ADD felhasznalo_id INT NULL;
