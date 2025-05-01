@@ -1,12 +1,10 @@
 <?php
 if(isset($_POST['felhasznalo']) && isset($_POST['jelszo']) && isset($_POST['vezeteknev']) && isset($_POST['utonev'])) {
     try {
-        // Kapcsolódás
-        $dbh = new PDO('mysql:host=127.0.0.1;port=3306;dbname=gyakorlat7', 'root', '',
-                        array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
+        $dbh = new PDO('mysql:host=mysql.nethely.hu;dbname=adatb3941', 'adatb3941', 'adatb3941', 
+                array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
         $dbh->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
         
-        // Létezik már a felhasználói név?
         $sqlSelect = "select id from felhasznalok where bejelentkezes = :bejelentkezes";
         $sth = $dbh->prepare($sqlSelect);
         $sth->execute(array(':bejelentkezes' => $_POST['felhasznalo']));
@@ -15,7 +13,6 @@ if(isset($_POST['felhasznalo']) && isset($_POST['jelszo']) && isset($_POST['veze
             $ujra = "true";
         }
         else {
-            // Ha nem létezik, akkor regisztráljuk
             $sqlInsert = "insert into felhasznalok(id, csaladi_nev, uto_nev, bejelentkezes, jelszo)
                           values(0, :csaladinev, :utonev, :bejelentkezes, :jelszo)";
             $stmt = $dbh->prepare($sqlInsert); 

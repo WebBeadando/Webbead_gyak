@@ -19,8 +19,7 @@
     <input type="file" name="kep" accept="image/*" required>
     <button type="submit">Kép feltöltése</button>
 </form>
-<<<<<<< Updated upstream
-=======
+
 <?php
     if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['kep'])) {
         $upload_dir = './images/uploads/';
@@ -55,7 +54,7 @@
         }
     }
 ?>
->>>>>>> Stashed changes
+
 <?php else: ?>
 <p>Csak bejelentkezett felhasználók tölthetnek fel képeket.</p>
 <?php endif; ?>
@@ -64,19 +63,19 @@
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
     <?php
-<<<<<<< Updated upstream
+
     $mappa = './images/feltoltott/';
     if (is_dir($mappa)) {
         $kepek = array_diff(scandir($mappa), array('.', '..'));
         foreach ($kepek as $kep) {
             echo "<div style='border: 1px solid #ccc; padding: 5px;'><img src=\"$mappa$kep\" alt=\"Kép\" style=\"max-width:200px;\"></div>";
-=======
+
     $mappa = './images/uploads/';
     if (is_dir($mappa)) {
         $kepek = array_diff(scandir($mappa), array('.', '..'));
         foreach ($kepek as $kep) {
             echo "<div style='border: 1px solid #ccc; padding: 5px;'><img src=\"/Webbead_gyak/images/uploads/$kep\" alt=\"Kép\" style=\"max-width:200px;\"></div>";
->>>>>>> Stashed changes
+
         }
     } else {
         echo "<p>Nincs feltöltött kép.</p>";
