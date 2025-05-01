@@ -88,6 +88,7 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+
 }
 auto-ajanlatok {
     display: flex;
@@ -132,4 +133,5 @@ auto-ajanlatok {
     height: auto;
     border-radius: 8px;
     border: 2px solid #ccc;
+
 }
