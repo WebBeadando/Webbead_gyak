@@ -1,7 +1,4 @@
 
-<h2>About Us</h2>
-<p>We are a great company doing great things.</p>
-
 <?php if (!isset($_SESSION['login'])): ?>
     <p>Ez az oldal csak bejelentkezett felhasználók számára érhető el.</p>
 <?php else: ?>
@@ -16,7 +13,7 @@
 
         <?php
         try {
-            $dbh = new PDO('mysql:host=mysql.nethely.hu;dbname=adatb3941', 'adatb3941', '',
+            $dbh = new PDO('mysql:host=localhost;dbname=dbname1', 'dbname1', 'password',
                 array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
             $dbh->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
 

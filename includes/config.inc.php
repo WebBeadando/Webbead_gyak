@@ -1,18 +1,18 @@
 <?php
 $ablakcim = array(
-    'cim' => 'Minta oldal.',
+    'cim' => 'Autómánia.',
 );
 
 $fejlec = array(
     'kepforras' => '',
     'kepalt' => '',
-	'cim' => 'Minta oldal',
+	'cim' => 'Autómánia',
 	'motto' => ''
 );
 
 $lablec = array(
     'copyright' => 'Copyright '.date("Y").'.',
-    'ceg' => 'Minta Kft.'
+    'ceg' => 'Autómánia Kft.'
 );
 
 $oldalak = array(

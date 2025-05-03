@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
             try {
-                $dbh = new PDO('mysql:host=mysql.nethely.hu;dbname=adatb3941', 'adatb3941', 'adatb3941', 
+                $dbh = new PDO('mysql:host=localhost;dbname=dbname1', 'dbname1', 'password', 
                 array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
                 $dbh->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
 
