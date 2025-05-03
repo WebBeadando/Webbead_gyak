@@ -1,12 +1,12 @@
+<?php if (!isset($_SESSION['login'])):
 
-<?php if (!isset($_SESSION['login'])): ?>
+ ?>
     <p>Ez az oldal csak bejelentkezett felhasználók számára érhető el.</p>
 <?php else: ?>
     <h2>Beérkezett üzenetek</h2>
     <table border="1" cellpadding="5" cellspacing="0">
         <tr>
-            <th>Név</th>
-            <th>Email</th>
+			<th>Név</th>
             <th>Üzenet</th>
             <th>Dátum</th>
         </tr>
@@ -17,7 +17,7 @@
                 array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
             $dbh->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
 
-            $stmt = $dbh->query("SELECT nev, email, uzenet, datum, felhasznalo_id
+            $stmt = $dbh->query("SELECT nev, uzenet, datum, felhasznalo_id
                                  FROM uzenetek
                                  ORDER BY datum DESC");
 
@@ -25,7 +25,6 @@
                 $nev = $row['felhasznalo_id'] ? htmlspecialchars($row['nev']) : "Vendég";
                 echo "<tr>
                         <td>{$nev}</td>
-                        <td>" . htmlspecialchars($row['email']) . "</td>
                         <td>" . nl2br(htmlspecialchars($row['uzenet'])) . "</td>
                         <td>{$row['datum']}</td>
                       </tr>";
@@ -36,4 +35,3 @@
         ?>
     </table>
 <?php endif; ?>
-

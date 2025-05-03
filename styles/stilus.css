@@ -5,8 +5,6 @@ nav ul {
     display: flex;
     justify-content: center;
 	color:#333;
-    
-    
 }
 nav ul li {
     padding: 0;
@@ -20,6 +18,12 @@ nav ul li a {
 }
 nav ul li a:hover {
     background-color: #111;
+}
+nav ul li.active a{
+    text-decoration: underline;
+    font-weight: bold;
+	border-radius: 5px;
+	background-color: #111;
 }
 header {
     background-color: #333;
@@ -47,17 +51,6 @@ nav {
     border-radius: 10px;
     background-color: #222;
 }
-
-
-nav ul li.active a{
-    text-decoration: underline;
-    font-weight: bold;
-	border-radius: 5px;
-	background-color: #111;
-}
-
-
-
 div#content {
     border-radius: 10px;
     background-color: grey;
@@ -80,15 +73,7 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
 }
-@media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
 
-
-
-}
 .auto-ajanlatok {
     display: flex;
     flex-direction: column;
@@ -130,26 +115,13 @@ footer {
     margin-top: 0;
     color: #222;
 }
-.galeria {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 20px;
-}
-.galeria img {
-    width: 200px;
-    height: auto;
-    border-radius: 8px;
-    border: 2px solid #ccc;
-
-}
 .auto-box a {
 	margin-top: 10px;
 }
 .video-container {
 	display:flex;
 	justify-content:space-between;
-	gap:20x;
+	gap:20px;
 	flex-wrap:wrap;
 	margin-top:20px;
 }
@@ -157,3 +129,37 @@ footer {
 	flex: 1;
 	max-width:50%;
 }
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.kepkartya {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.kepkartya:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+
+.kepkartya img {
+    max-width: 200px;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+}
+
+

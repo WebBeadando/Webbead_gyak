@@ -1,6 +1,6 @@
 <?php
 $ablakcim = array(
-    'cim' => 'Autómánia.',
+    'cim' => 'Autómánia',
 );
 
 $fejlec = array(

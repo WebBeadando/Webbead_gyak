@@ -9,7 +9,7 @@
 				<h3>Audi A4</h3>
 				<h3>Évjárat: 2019</h3>
 				<h3>Ár: 3 200 000 Ft</h3>
-				<h3>Üzemagyang: Benzin</h3>
+				<h3>Üzemanyang: Benzin</h3>
 				<h3>Hengerűrtartalom: 1395 cm³</h3>
 				<h3>Teljesítmány: 150 Le (110 kW)</h3>
 				<h3>Műszaki érvényesség: 2027. Február</h3>
@@ -24,7 +24,7 @@
 				<h3>Skoda Octavia</h3>
 				<h3>Évjárat: 2017</h3>
 				<h3>Ár: 2 450 000 Ft</h3>
-				<h3>Üzemagyang: Dízel</h3>
+				<h3>Üzemanyang: Dízel</h3>
 				<h3>Hengerűrtartalom: 1589 cm³</h3>
 				<h3>Teljesítmány: 110 Le (81 kW)</h3>
 				<h3>Műszaki érvényesség: 2025. November</h3>
@@ -38,7 +38,7 @@
 				<h2>Suzuki Swift</h2>
 				<h3>Évjárat: 2011</h3>
 				<h3>Ár: 1 000 000 Ft</h3>
-				<h3>Üzemagyang: Benzin</h3>
+				<h3>Üzemanyang: Benzin</h3>
 				<h3>Hengerűrtartalom: 1245 cm³</h3>
 				<h3>Teljesítmány: 94 Le (69 kW)</h3>
 				<h3>Műszaki érvényesség: 2026. Június</h3>
@@ -52,7 +52,7 @@
 				<h2>Volkswagen Golf 4</h2>
 				<h3>Évjárat: 2017</h3>
 				<h3>Ár: 2 450 000 Ft</h3>
-				<h3>Üzemagyang: Benzin</h3>
+				<h3>Üzemanyang: Benzin</h3>
 				<h3>Hengerűrtartalom: 1245 cm³</h3>
 				<h3>Teljesítmány: 125 Le (92 kW)</h3>
 				<h3>Műszaki érvényesség: 2025. Október</h3>

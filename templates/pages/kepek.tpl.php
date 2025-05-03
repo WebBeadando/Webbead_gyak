@@ -47,21 +47,14 @@
 
 <hr>
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+<div class="galeria">
     <?php
-    $mappa1 = './images/feltoltott/';
-    if (is_dir($mappa1)) {
-        $kepek1 = array_diff(scandir($mappa1), array('.', '..'));
-        foreach ($kepek1 as $kep) {
-            echo "<div style='border: 1px solid #ccc; padding: 5px;'><img src=\"$mappa1$kep\" alt=\"Kép\" style=\"max-width:200px;\"></div>";
-        }
-    }
 
     $mappa2 = './images/uploads/';
     if (is_dir($mappa2)) {
         $kepek2 = array_diff(scandir($mappa2), array('.', '..'));
         foreach ($kepek2 as $kep) {
-            echo "<div style='border: 1px solid #ccc; padding: 5px;'><img src=\"$mappa2$kep\" alt=\"Kép\" style=\"max-width:200px;\"></div>";
+            echo "<div class='kepkartya'><img src=\"$mappa2$kep\" alt=\"Kép\" style=\"max-width:200px;\"></div>";
         }
     }
     ?>
